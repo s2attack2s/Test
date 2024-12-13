@@ -596,6 +596,10 @@ header {
     overflow: hidden;
 }
 
+.header-ios {
+    background-color: white !important;
+}
+
 .button-mobile {
     position: absolute;
     top: 0;
