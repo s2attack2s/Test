@@ -24,3 +24,13 @@ $('.menu-toggle').click(function () {
     $('.menu-collapse-mobile .icon-plus').css('display', 'block');
     $('.menu-collapse-mobile .icon-minus').css('display', 'none');
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    function isIOS() {
+        return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+    }
+    if (isIOS()) {
+        document.querySelector('header').classList.add('header-ios');
+    }
+});
